@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR Caterings</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="{% static 'rrcaterings/css/home1.css'%}">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'rrcaterings/css/style.css'%}" />
+
+</head>
+
+<body>
+    <div class="preloader">
+        <img class="tree" src="{% static 'rrcaterings/images/tree.png' %}" alt="">
+        <h1 class="text">Page loading....</h1>
+    </div>
+    <img id="lo" src="{% static 'rrcaterings/images/logo.png' %}" alt="logo">
+        <video src="{% static 'rrcaterings/videos/rrcaterings.mp4' %}" muted loop class="vide" autoplay></video>
+        <div class="intro">
+            <div class="intro-text">
+              <h1 class="hide">
+                <span class="some" id="wellc">welcome to</span>
+              </h1>
+              <h1 class="hide">
+                <span class="some" >RR CATERINGS</span>
+              </h1>
+
+            </div>
+          </div>
+        <div class="slider"></div>
+    <div class="header">
+        <div class="head" >
+            <h1>OUR SERVICES</h1>
+        </div>
+    </div>
+    <div class="main">
+        <div class="block">
+            <img class="main1" src="{% static 'rrcaterings/images/rrmariagecatering.png' %}" alt="logo">
+            <a href="mariage" class="block-btn">know more</a>
+        </div>
+        <div class="block">
+            <img class="main1" src="{% static 'rrcaterings/images/3.jpg' %}" alt="logo">
+            <a href="#" class="block-btn">know more</a>
+        </div>
+        <div class="block">
+            <img class="main1" src="{% static 'rrcaterings/images/4.jpg' %}" alt="logo">
+            <a href="#" class="block-btn">know more</a>
+        </div>
+
+    </div>
+    <div class="head">
+        <h3><i>OUR SIGNATURE RECEPIES</i></h3>
+    </div><br>
+    <div class="fav">
+        <img class="service" height="200px" width="200px" src="{% static 'rrcaterings/images/rrmariagecatering.png' %}" alt="logo">
+        <img  class="service" height="200px" width="200px" src="{% static 'rrcaterings/images/rrmariagecatering.png' %}" alt="logo">
+        <img class="service" height="200px" width="200px" src="{% static 'rrcaterings/images/rrmariagecatering.png' %}" alt="logo">
+        <img class="service"  height="200px" width="200px" src="{% static 'rrcaterings/images/rrmariagecatering.png' %}" alt="logo">
+    </div>
+    <form class="form">
+        <label id="enquiry" for="">ENQUIRY</label><br>
+        <div class="btn">
+            <input placeholder="Name" ><br>
+            <input placeholder="Phone Number" type="number"><br>
+            <textarea id="message" placeholder="Enter Your Enquiry Here"></textarea><br>
+            <button> Submit </button>
+        </div>
+    </form>
+    <div class="footers">
+        <h1 class="tops">RR Caterings</h1>
+        <img id="we" src="{% static 'rrcaterings/images/logo.png' %}" alt="logo">
+        <h2 class="call"><a href="tel:9840248572">+91 9840248573</a><br></h2>
+        <h2 class="contact"><a href = "mailto: aakashmadhavan14@gmail.com">Click here to send EMAIL</a></h2>
+        <h2>Designed and Developed by <a href="https://www.instagram.com/judicial_jack/">SHRIDHAR</a></h2>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="{% static 'rrcaterings/JS/app.js' %}"></script>
+</body>
+</html>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+
+

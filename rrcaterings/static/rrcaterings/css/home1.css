@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+body::-webkit-scrollbar-track {
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+      }
+body::-webkit-scrollbar:hover {
+    width: 15px;
+  }
+#lo{
+    position: fixed;
+    width: 280px;
+    background-color: none;
+    left: 50%;
+    transform: translate(-50%);
+}
+#ho{
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+}
+.vide{
+    position: relative;
+    width: 100%;
+    z-index: -100;
+    object-fit: cover;
+    height: 100vh;
+    border-radius: 10px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+    background: rgb(195,201,196);
+    background: radial-gradient(circle, rgba(195,201,196,1) 20%, rgba(255,255,255,1) 100%);
+}
+.head{
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: none;
+    margin: 10px  ;
+    padding: 5px 5px;
+    font-family: 'Montserrat', sans-serif;
+    border: 3px dotted black;
+    background-image: "{% static 'rrcaterings/videos/rrcaterings.mp4' %}";
+}
+.head:hover{
+    border: 3px solid black;
+}
+.header{
+    height: 70px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.fav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+    border-radius: 500px;
+    transition: ease-out;
+    transform-style: preserve-3d;
+    transition-duration: 3s;
+    background-image: "{% static 'rrcaterings/videos/rrcaterings.mp4' %}";
+}
+.service::before{
+    content: "hiiiii";
+    font-size: 1000px;
+}
+.service{
+    margin: 30px;
+    border-radius: 500px;
+    box-shadow: 5px 5px 5px rgb(225,235,226); 
+    transition: all 2s ease;
+}
+.service:hover{
+    margin: 50px;
+    box-shadow: 10px 10px 10px rgb(117, 224, 117); 
+}
+.main1{
+    margin: 30px;
+    box-shadow: 10px 10px 10px rgb(76, 82, 76);
+    border-radius: 20px;
+    transition: all 2s ease;
+}
+.main1:hover{
+    margin: 70px;
+}
+.form{
+    background-color: #85FFBD;
+    background-image: linear-gradient(180deg, #85FFBD 0%, #FFFB7D 100%);    
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    height: 550px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.btn{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    background-color: none;
+    line-break: loose;
+    width: 70%;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+#message{
+    height: 150px ;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+input{
+    color: rgb(20, 20, 20);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+#enquiry{
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: none;
+    font-family: 'Montserrat', sans-serif;
+}
+button{
+    color: rgb(0, 0, 0);
+    border: none;
+    margin: 3px;
+    padding: 10px;
+}
+.footer{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: -2;
+}
+#ho1{
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    z-index: -1;
+}
+.divider{
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(202, 103, 103);
+}
+.items{
+    position: absolute;
+    top: 600px;
+    background-color: rgb(221, 21, 21);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ul{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: yellow;
+}
+.footers{
+    position: relative;
+    top: 500px;
+    height:400px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+.tops{
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    color: white;
+}
+h2{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+h2 a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 900
+}
+.contact{
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    background-color: #85FFBD;
+    background-image: linear-gradient(180deg, #85FFBD 0%, #FFFB7D 100%);    
+    border-radius: 10px;
+    padding: 10px ;
+    font-size: 20px;
+}
+.call{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    background-color: #85FFBD;
+    background-image: linear-gradient(180deg, #85FFBD 0%, #FFFB7D 100%);    
+    border-radius: 10px;
+    padding: 10px ;
+}
+#we{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50% );
+}
+.tops{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+}
+.block-btn{
+    position: absolute;
+    right: 35%;
+    top: 50%;
+    z-index: 10000;
+    font-size: 30px;
+    border: 3px solid rgb(240, 243, 56);
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(170, 46, 46);
+    background-color: rgb(228, 241, 36);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-transform: capitalize;
+    transform: translate(-50% -50%);
+    display: none;
+}
+.block{
+    position: relative;
+}
+.block:hover .block-btn{
+    display: block;
+}
+.block:hover .main1{
+    opacity: 0.5;
+}
+.preloader{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(94, 96, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.text{
+    position: absolute;
+    top: 80%;
+    transform: translateY(-75);
+    color: white;
+    font-family: sans-serif;
+}
+.tree{
+    height: 400px;
+    width: 400px;
+    animation: tree 10s ease infinite alternate;
+}
+@keyframes tree{
+    from{
+        transform:translateX(0px)
+    }
+    to{
+        transform: translateX(10px);
+    }
+}
+.preload-finish{
+    opacity: 0;
+    pointer-events: none;
+}

@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR Caterings</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'rrcaterings/css/lay.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rrcaterings/css/home1.css'%}">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <img id="lo" src="{% static 'rrcaterings/images/logo.png' %}" alt="logo">
+    <video src="{% static 'rrcaterings/videos/rrcaterings.mp4' %}" muted loop class="vide" autoplay></video>
+    <div class="ss">
+        <h1  class="animate__animated animate__bounce">An animated element</h1>
+    </div>
+    <div class="conti">
+        <div class="cont">
+            <div class="con">
+                <h2>DISHES</h2>
+            </div>
+            <div class="dishbox">
+                <div class="con1">
+                    {% for dish in dishes %}
+                    <div class="dishes">{{dish}}</div>
+                    {% endfor%}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footers">
+        <h1 class="tops">RR Caterings</h1>
+        <img id="we" src="{% static 'rrcaterings/images/logo.png' %}" alt="logo">
+        <h2 class="call"><a href="tel:9840248572">+91 9840248573</a><br></h2>
+        <h2 class="contact"><a href = "mailto: aakashmadhavan14@gmail.com">Click to send EMAIL</a></h2>
+        <h2>Designed and Developed by <a href="#">SHRIDHAR</a></h2>
+    </div>
+</body>
+</html>
